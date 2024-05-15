@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Added to align items vertically */
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .input {
+            margin-bottom: 10px;
+        }
+
+        /* Added styles for the contact paragraph */
+        p {
+            margin-bottom: 20px; /*Adjust as needed */
+            font-size: 18px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <p>Contact Information</p>
+    <br>
+    <form>
+        <label for="name" >Name:</label>
+        <input type="name" id="name" name="name" required>
+        <br>
+        <label for="number" >Number:</label>
+        <input type="number" id="number" name="number" required>
+        <br>
+        <!-- Email Input Field with label -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <!-- Radio Buttons with Label -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <!-- Textarea for comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
